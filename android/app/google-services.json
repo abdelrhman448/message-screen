@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "16223232324",
+    "project_id": "message-project-1a53e",
+    "storage_bucket": "message-project-1a53e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:16223232324:android:c1eb5a374d5026bcfc7711",
+        "android_client_info": {
+          "package_name": "com.example.messgas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "16223232324-ptjjc5qa91sa94fuf7or5dbsrqmea82h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.messgas",
+            "certificate_hash": "4af564b9a95996203a28144900dec65f3452dd76"
+          }
+        },
+        {
+          "client_id": "16223232324-qdgaddujp51h1qruqnq8ucu6rdlbk7qo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNg1hIo6q4Ch891qsNMps1JiAAaXNRkQ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "16223232324-qdgaddujp51h1qruqnq8ucu6rdlbk7qo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
