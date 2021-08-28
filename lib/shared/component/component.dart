@@ -1,14 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:messgas/module/chat_screen.dart';
+import 'package:messgas/models/user_model.dart';
+import 'package:messgas/module/chat_screen/chat_screen.dart';
 
-Widget conversationItem(context) {
+Widget conversationItem(context,UserModel userModel) {
   return GestureDetector(
     onTap: () {
       Navigator.push(
         context,
          MaterialPageRoute(
-          builder: (context) => ChatScreen(),
+          builder: (context) => ChatScreen(userModel:userModel ,),
         ),
       );
     },
@@ -28,6 +29,7 @@ Widget conversationItem(context) {
                     child: CircleAvatar(
                       radius: 30,
                       backgroundColor: Colors.grey,
+                      backgroundImage: NetworkImage('https://i.stack.imgur.com/l60Hf.png'),
                     ),
                   ),
                   Padding(
@@ -52,14 +54,14 @@ Widget conversationItem(context) {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Ahmed',
+                  userModel.name,
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
                 ),
                 SizedBox(
                   height: 6,
                 ),
                 Text(
-                  'iam sending my message in i hop to replay to me gbhrn rehtht4h be gretrtrbtgt4',
+                  'ghhry',
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.grey.shade600,
@@ -81,9 +83,10 @@ Widget conversationItem(context) {
   );
 }
 
-Widget myTextField({Icon icon, String hintText, InputBorder inputBorder}) {
+Widget myTextField({Icon icon, String hintText, InputBorder inputBorder,TextEditingController myController}) {
   return TextField(
     keyboardType: TextInputType.multiline,
+   controller: myController ,
     maxLines: 5,
     minLines: 1,
     decoration: InputDecoration(
